@@ -7,7 +7,7 @@ local M = {
     end,
     lazy = false,
     config = function()
-        require 'nvim-treesitter.install'.compilers = { "clang" }
+        require 'nvim-treesitter.install'.compilers = { "clang", "gcc" }
         require("nvim-treesitter.configs").setup({
             ensure_installed = { "c", "cpp", "bash", "html", "php", "go", "python", "lua", "json", "yaml", "toml",
                 "markdown", "markdown_inline", "vim", "vimdoc", "query", "regex", "java", "javascript",
